@@ -1,0 +1,81 @@
+{
+  "habits": [
+    {
+      "title": "Morning Meditation",
+      "description": "Meditate for 10 minutes every morning",
+      "frequency": "daily",
+      "completed": false,
+      "streak": 2,
+      "createdAt": "2025-03-25T08:00:00.000Z",
+      "id": "1"
+    },
+    {
+      "title": "Read a Book",
+      "description": "Read for 30 minutes before bed",
+      "frequency": "daily",
+      "completed": true,
+      "streak": 3,
+      "createdAt": "2025-03-22T20:00:00.000Z",
+      "id": "2"
+    },
+    {
+      "title": "Weekly Exercise",
+      "description": "Go to the gym 3 times a week",
+      "frequency": "weekly",
+      "completed": false,
+      "streak": 2,
+      "createdAt": "2025-03-20T15:30:00.000Z",
+      "id": "3"
+    },
+    {
+      "id": "0751",
+      "title": "DSA questions",
+      "description": "Solve 2-3 problems",
+      "frequency": "daily",
+      "completed": false,
+      "streak": 0,
+      "createdAt": "2025-04-05T16:56:45.642Z"
+    },
+    {
+      "id": "ed77",
+      "title": "Journal",
+      "description": "",
+      "frequency": "daily",
+      "completed": false,
+      "streak": 0,
+      "createdAt": "2025-04-08T17:43:48.814Z"
+    }
+  ],
+  "journals": [
+    {
+      "id": "j1",
+      "title": "Felt Focused Today",
+      "content": "Had a productive session with meditation and completed all tasks.",
+      "createdAt": "2025-04-01T10:00:00.000Z"
+    },
+    {
+      "id": "j2",
+      "title": "A Bit Lazy",
+      "content": "Skipped workout but did read before bed. Need to refocus.",
+      "createdAt": "2025-04-02T22:00:00.000Z"
+    },
+    {
+      "id": "j3",
+      "title": "Great Momentum",
+      "content": "On a 3-day streak with DSA problems. Momentum is building!",
+      "createdAt": "2025-04-04T08:30:00.000Z"
+    },
+    {
+      "id": "6451",
+      "title": "Ohh this life",
+      "content": "Why all these happens!",
+      "createdAt": "2025-04-08T13:25:25.702Z"
+    },
+    {
+      "id": "ab8f",
+      "title": "Apr 8, 2025 Entry",
+      "content": "Hope I will finish this redux-focused project today",
+      "createdAt": "2025-04-08T17:34:11.678Z"
+    }
+  ]
+}
