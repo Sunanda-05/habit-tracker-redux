@@ -15,15 +15,18 @@ A comprehensive habit tracking application **mainly focusing on implementing mos
 This project showcases a comprehensive implementation of Redux concepts:
 
 1. **Redux Toolkit (RTK)**
+
    - Configured store with middleware
    - Used for state management across the application
 
 2. **Entity Adapter**
+
    - Normalized state for efficient CRUD operations
    - Implemented selectors (`selectAll`, `selectById`)
    - Used in journal and habit management
 
 3. **RTK Query**
+
    - Built data-fetching layer with `createApi`
    - Endpoints for CRUD operations on habits and journals
    - Implemented `fakeBaseQuery` for side-effect-only endpoints
@@ -32,45 +35,60 @@ This project showcases a comprehensive implementation of Redux concepts:
    - Response transformation with `transformResponse`
 
 4. **React-Redux Integration**
+
    - Connected components with `useSelector` and `useDispatch`
    - Leveraged RTK Query hooks for data fetching
    - Synchronized UI state with backend data
 
 5. **UI Toast System**
-   - Integrated with shadcn/ui toast component
-   - Triggered notifications for user actions
-   - Connected to RTK Query for operation feedback
+
+   - Built a centralized toast system using Redux slice (toastSlice) and RTK Query mutation (toastApi) with fakeBaseQuery.
+   - toastApi abstracts the dispatching of toast actions, keeping UI components clean and decoupled from Redux internals.
+   - Toasts are added by calling addToast mutations via toastApi.
+   - Each toast includes a unique id, message, and type (success or error), stored in Redux state.
+   - A ToastManager component reads from Redux and renders toasts in the UI.
+   - Toasts are auto-removed after a few seconds using setTimeout, ensuring no manual cleanup required.
+   - System supports contextual toasts per component — e.g., different messages for habit vs journal actions.
+   - Designed for scalability: toast logic can be extended or replaced with middleware or hooks if needed.
 
 6. **Redux Slices**
+
    - Created slices for theme, filters, journals, habits
    - Implemented reducers for state management
    - Used actions for state updates
 
 7. **Redux Persist**
+
    - Persisted selected parts of state across sessions
    - Configured with whitelist/blacklist
 
 8. **Redux Selectors**
+
    - Created efficient state selectors
    - Used for accessing normalized state
 
 9. **Redux Actions and Reducers**
+
    - Implemented in slices for state manipulation
    - Connected to UI components
 
 10. **Redux Provider**
+
     - Set up provider for application
     - Configured with store and persistor
 
 11. **Redux State Management**
+
     - Combined local UI state and server state
     - Implemented optimistic updates
 
 12. **Redux Middleware**
+
     - Configured default middleware
     - Added custom middleware as needed
 
 13. **Redux Thunks**
+
     - Used via RTK Query for async operations
     - Handled loading, success, and error states
 
